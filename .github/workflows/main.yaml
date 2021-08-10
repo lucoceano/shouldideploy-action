@@ -6,4 +6,4 @@ jobs:
     name: A job to say hello
     steps:
       - name: Should I deploy?
-        uses: lucoceano/shouldideploy-action
+        uses: lucoceano/shouldideploy-action@v1
