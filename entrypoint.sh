@@ -1,10 +1,11 @@
 #!/bin/sh -l
 
-SHOULD_DEPLOY=`curl https://shouldideploy.today/api` | jq '.shouldideploy'
+RESPONSE=`curl -s https://shouldideploy.today/api`
+SHOULD_DEPLOY=`echo $RESPONSE | jq '.shouldideploy'`
 
-if [ $SHOULD_DEPLOY ]
+if [ "$SHOULD_DEPLOY" != true ]
 then
-  exit 0
-else
-  exit 9
+  exit 1
 fi
+
+echo $RESPONSE | jq '.message'
