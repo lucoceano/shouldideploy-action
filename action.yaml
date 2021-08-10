@@ -12,5 +12,5 @@ inputs:
     required: false
   ISSUE_NUMBER:
     description: The current issue id the job is running
-    default: ${{ context.issue.number }}
+    default: ${{ github.event.issue.number }}
     required: false
