@@ -8,7 +8,6 @@ then
   exit 1
 fi
 
-
 MESSAGE=`echo $RESPONSE | jq '.message'`
 
 curl --request POST \
