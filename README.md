@@ -7,3 +7,7 @@ This action fails if it is not safe to deploy.
 ```yaml
 uses: lucoceano/shouldideploy-action@v5
 ```
+
+### Thanks to
+
+- [shouldideploy](https://github.com/baires/shouldideploy/)

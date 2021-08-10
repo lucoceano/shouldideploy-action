@@ -4,3 +4,13 @@ description: 'Action to let you know if you should deploy today'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+
+inputs:
+  GITHUB_TOKEN:
+    description: The GitHub token used to create an authenticated client
+    default: ${{ github.token }}
+    required: false
+  ISSUE_NUMBER:
+    description: The current issue id the job is running
+    default: ${{ context.issue.number }}
+    required: false
