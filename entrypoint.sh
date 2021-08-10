@@ -11,6 +11,12 @@ fi
 
 MESSAGE=`echo $RESPONSE | jq '.message'`
 
+echo $GITHUB_TOKEN
+echo $GITHUB_REPOSITORY
+echo $MESSAGE
+echo $ISSUE_NUMBER
+
+
 curl --request POST \
           --url https://api.github.com/repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments \
           --header 'authorization: Bearer $GITHUB_TOKEN' \
