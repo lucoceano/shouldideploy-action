@@ -9,4 +9,4 @@ jobs:
     name: A job to check if you should deploy today
     steps:
       - name: Should I deploy?
-        uses: lucoceano/shouldideploy-action@v9
+        uses: lucoceano/shouldideploy-action@v10
