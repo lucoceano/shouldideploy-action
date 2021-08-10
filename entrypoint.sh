@@ -15,7 +15,5 @@ curl --request POST \
           --url https://api.github.com/repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments \
           --header 'authorization: Bearer $GITHUB_TOKEN' \
           --header 'content-type: application/json' \
-          --data '{
-            "body": "$MESSAGE"
-            }' \
+          --data '{"body": "$MESSAGE"}' \
           --fail
