@@ -1,0 +1,9 @@
+on: [push]
+
+jobs:
+  should_i_deploy:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Should I deploy?
+        uses: lucoceano/shouldideploy-action

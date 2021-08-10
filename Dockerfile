@@ -6,3 +6,5 @@ COPY entrypoint.sh /entrypoint.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
+
+# https://stackoverflow.com/questions/65728933/how-to-capture-a-curl-http-status-code-in-a-github-action-to-determine-success-f
