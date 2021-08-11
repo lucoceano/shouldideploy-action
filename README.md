@@ -6,7 +6,7 @@ This action fails if it is not safe to deploy.
 ## Example usage
 
 ```yaml
-uses: lucoceano/shouldideploy-action@v5
+uses: lucoceano/shouldideploy-action@v11
 ```
 
 ### Thanks to
