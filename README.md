@@ -1,5 +1,6 @@
 # Should I deploy today action
 
+
 This action fails if it is not safe to deploy.
 
 ## Example usage
